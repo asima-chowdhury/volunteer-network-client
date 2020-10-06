@@ -26,9 +26,6 @@ function App() {
           <PrivateRoute path="/registrationPage/:activityId">
             <RegistrationPage />
           </PrivateRoute>
-          {/* <PrivateRoute path="/registrationPage">
-            <RegistrationPage />
-          </PrivateRoute> */}
           <Route path="/login">
             <Login />
           </Route>
