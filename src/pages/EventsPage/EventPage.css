@@ -1,0 +1,14 @@
+.events-info{
+    background-color: #dbdbdb;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 0 5px!important;
+    box-shadow: 5px 5px 20px 10px #ddd;
+    border: 1px solid #cbcbcb;
+}
+.events-info h5{
+    color:#007bff;
+}
+.events-info h5,h6{
+    font-weight: 700;
+}

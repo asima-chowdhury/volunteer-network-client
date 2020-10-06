@@ -1,0 +1,9 @@
+.home{
+    height: 550px;
+    background-position: center;
+    background-image: center;
+    background-size: cover;
+}
+.home h2{
+    font-weight:700;
+}

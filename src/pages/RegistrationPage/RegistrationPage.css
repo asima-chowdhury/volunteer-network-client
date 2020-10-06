@@ -1,0 +1,27 @@
+.custom-container{
+    background-color:#E5E5E5;
+    padding: 3% 0;
+}
+.custom-form{
+    background-color: #fff;
+    padding: 35px!important;
+    border-radius:5px;
+    border:1px solid #bebebe;
+}
+.custom-form input {
+    font-size: 14px;    
+    width: 100%;
+    font-weight: 600;
+    padding:10px 0;
+    margin:10px 0;
+    border: none;
+    border-bottom:1px solid #ddd;
+}
+input[type=submit] {
+    background-color: #3F90FC;
+    color: #fff;
+}
+.error{
+    color:red;
+    display: block;
+}
