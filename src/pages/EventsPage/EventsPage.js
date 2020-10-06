@@ -12,7 +12,7 @@ const EventsPage = () => {
     const [events, setEvents] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/event?email=' + loggedInUser.email, {
+        fetch('https://fathomless-hollows-72216.herokuapp.com/event?email=' + loggedInUser.email, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -25,7 +25,7 @@ const EventsPage = () => {
 
     const deleteEvent = (id) => {
         // console.log('clicked', id)
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://fathomless-hollows-72216.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

@@ -6,18 +6,10 @@ const Activities = () => {
     const [volunteerActivities, setVolunteerActivities] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/activities')
+        fetch('https://fathomless-hollows-72216.herokuapp.com/activities')
             .then(res => res.json())
             .then(data => setVolunteerActivities(data))
     }, [])
-
-    // const handleAddActivity = () => {
-    //     fetch('http://localhost:5000/addActivities', {
-    //         method: 'POST',
-    //         headers: { 'Content-Type': 'application/json' },
-    //         body: JSON.stringify(fakeData)
-    //     })
-    // }
 
     const [activityTask, setActivityTask] = useState([]);
 
@@ -34,7 +26,6 @@ const Activities = () => {
                     handleRegActivity={handleRegActivity}
                 ></SingleActivity>)
             }
-            {/* <button onClick={handleAddActivity}>add activity</button> */}
         </div>
     );
 };

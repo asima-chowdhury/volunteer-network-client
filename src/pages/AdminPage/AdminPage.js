@@ -9,7 +9,7 @@ const AdminPage = () => {
     const [active, setActive] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:5000/volunteerList')
+        fetch('https://fathomless-hollows-72216.herokuapp.com/volunteerList')
             .then(res => res.json())
             .then(data => {
                 console.log(data);
@@ -18,7 +18,7 @@ const AdminPage = () => {
     }, [])
 
     const deleteEvent = (id) => {
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://fathomless-hollows-72216.herokuapp.com/delete/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

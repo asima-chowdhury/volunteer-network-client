@@ -17,7 +17,7 @@ const RegistrationPage = () => {
 
     const onSubmit = (data) =>{
         // console.log(data);
-        fetch('http://localhost:5000/addEvent',{
+        fetch('https://fathomless-hollows-72216.herokuapp.com/addEvent',{
             method: 'POST',
             headers: { 'Content-Type': 'application/json'},
             body: JSON.stringify(data)
@@ -31,7 +31,7 @@ const RegistrationPage = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/activities')
+        fetch('https://fathomless-hollows-72216.herokuapp.com/activities')
             .then(res => res.json())
             .then(data => {
                 const singleActivity = data.map(activity => activity);
